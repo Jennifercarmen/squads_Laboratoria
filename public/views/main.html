@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Probando firebase</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!--<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.amber-orange.min.css" />-->
+    <!--<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>-->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- <link rel="stylesheet" href="../css/main.css"> -->
+</head>
+<body>
+  <div class="header align-center">
+    <img src="../assets/img/ale_foto.png" alt="logo" class="user-img" />
+  </div>
+  <div class="row">
+    <div class="col s4"></div>
+    <div class="input-field col s4 center-align" id="options">
+      <p class="date-styles">Selecciona el sprint</p>
+    <select id="sprints" class="font-styles">
+    <option value="sprint_1" >Sprint1</option>
+    <option value="sprint_3" >sprint3</option>
+    <option value="sprint_4" selected>sprint4</option>
+  </select>
+  </div>
+  <div class="col s4"></div>
+  </div>
+
+    <div id="data" class="data-styles center-align">
+    </div>
+    <div id="date" class="date-styles center-align">
+    </div> 
+      <div id="sprint1">
+      </div>
+      <main>
+        <section>
+          <div class="container">
+            <div class="row">
+              <div class="col s12 m12 center-align">
+                <br>
+                <span class="tittle-sprint" id="number-sprint"></span>
+              </div>
+            </div>
+          </div>
+          <section>
+            <div class="container">
+              <div class="row">
+                <div class="col s12 center-align">
+                  <button id="btn-reorganizar" class="btn button-style" name="action">Reorganizar
+                  </button>
+                  <button id="btns" class="btn modal-trigger button-style" href="#modal1" name="action">Guardar
+                  </button>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+        <section>
+          <div class="container-fluid">
+            <div class="row" id="container-sq">
+              <!-- <div class="col s12 m6"> -->
+              <!-- <div class="row"> -->
+              <div class="col s12 m6 ">
+                <div class="card card-styles">
+                  <span class="card-title black-text">
+                    <i class="material-icons">dialpad</i> Squad 1</span>
+                  <div id="sq1" class="row container-images dropheigth card-body-styles" data-box="marco" style=" margin:5px ; padding: 5px">
+    
+                  </div>
+                </div>
+              </div>
+              <div class="col s12 m6 ">
+                <div class="card card-styles">
+                  <span class="card-title black-text">
+                    <i class="material-icons">dialpad</i> Squad 2</span>
+                  <div id="sq2" class="row container-images dropheigth card-body-styles" data-box="marco" style=" margin:5px ; padding: 5px">
+                  </div>
+                </div>
+              </div>
+              <div class="col s12 m6">
+                <div class="card card-styles">
+                  <span class="card-title black-text">
+                    <i class="material-icons">dialpad</i> Squad 3</span>
+                  <div id="sq3" class="row container-images dropheigth card-body-styles" data-box="marco" style=" margin:5px ; padding: 5px">
+                  </div>
+                </div>
+              </div>
+              <div class="col s12 m6">
+                <div class="card card-styles">
+                  <span class="card-title black-text">
+                    <i class="material-icons">dialpad</i> Squad 4</span>
+                  <div id="sq4" class="row container-images dropheigth card-body-styles" data-box="marco" style=" margin:5px ; padding: 5px">
+                  </div>
+                </div>
+              </div>
+              <div class="col s12 m6">
+                <div class="card card-styles">
+                  <span class="card-title black-text">
+                    <i class="material-icons">dialpad</i> Squad 5</span>
+                  <div id="sq5" class="row container-images dropheigth card-body-styles" data-box="marco" style=" margin:5px ; padding: 5px">
+                    <!-- </div> -->
+                  </div>
+                </div>
+                <!-- </div> -->
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    
+
+    <button id="signOutBtna">sign</button>
+
+
+    <script type="text/javascript" src="../vendors/jquery/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+    <script src="../js/config.js"></script>
+    <!-- Compiled and minified JavaScript -->
+   <script src="../js/app1.js"></script>
+  <script src="../js/drag-drop.js"></script>
+  <script src="../js/app.js"></script>
+</body>
+</html>
